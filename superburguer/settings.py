@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 ROOT_URLCONF = 'superburguer.urls'
 
 TEMPLATES = [
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'superburguer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'spb_main',
+        'NAME': 'spb',
         'USER': 'test',
         'PASSWORD': '123456',
         'HOST': 'localhost',
